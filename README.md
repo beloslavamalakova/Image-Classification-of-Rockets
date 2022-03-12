@@ -20,9 +20,9 @@
 #### We can see which pixels are positively associated with belonging to the class, and which pixels are negatively associated with belonging to the class.For example, consider Class 0. If a sample has large values in the pixels shown in blue (the 0 shape around the center of the image), the probability of that sample being a 0 digit increases. If the sample has large values in the pixels in the center of the image, the probability of the sample being a 0 digit decreases.Many pixels have coefficients whose magnitude are very small. These are shown in white, and they are not very important for this classification task.
 #### In general, to get the predicted label, we can find the class with the highest probability. If this matches the actual label for the first test sample, then our prediction is correct.
 #### Let’s look at our example test point, and compare to our own computations.We use the predict function to predict a label for each sample in the test set. 
-#### Now we have to invert the image to match the training data and then we adjust the contrast and scale of the image. Finally, reshape to (1, 784) — 1 sample, 784 features. Now we use the logistic regression model to predict our input image and plot the conditional probability. Here are the results of the classification. The accuracy is accuracy - 0.868421052631579.
+#### Now we have to invert the image to match the training data and then we adjust the contrast and scale of the image. Finally, reshape to (1, 784) — 1 sample, 784 features. Now we use the logistic regression model to predict our input image and plot the conditional probability. Here are the results of the classification. The validation accuracy is 0.868421052631579.
 <img
-  src="../logisticregression1.png"
+  src="../results/logisticregression1.png"
   alt="Logistic regression"
   title="Logistic regression"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
