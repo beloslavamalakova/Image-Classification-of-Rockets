@@ -8,6 +8,7 @@
 
 ### Data preparation
 #### The data has features. Each “feature” represents a pixel in the image, and each pixel can take on any integer value from 0 to 255. A large value for a pixel means that there is writing in that part of the image.We can see a few examples, by plotting the 784 features as a 28x28 grid. In these images, white pixels indicate high values in the feature matrix.
+![Data](https://drive.google.com/file/d/1pZqIqrr6W9GfKk-z-msdDuyGOpCh-hR1/view?usp=sharing)
 
 
 ### Data splitting
@@ -21,8 +22,5 @@
 #### In general, to get the predicted label, we can find the class with the highest probability. If this matches the actual label for the first test sample, then our prediction is correct.
 #### Let’s look at our example test point, and compare to our own computations.We use the predict function to predict a label for each sample in the test set. 
 #### Now we have to invert the image to match the training data and then we adjust the contrast and scale of the image. Finally, reshape to (1, 784) — 1 sample, 784 features. Now we use the logistic regression model to predict our input image and plot the conditional probability. Here are the results of the classification. The validation accuracy is 0.868421052631579.
-<img
-  src="../results/logisticregression1.png"
-  alt="Logistic regression"
-  title="Logistic regression"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+![logistic regression results](https://drive.google.com/file/d/1MyuFmQzKOzdpe9G6uUxp43cOpoefC_qV/view?usp=sharing)
+
