@@ -40,7 +40,6 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
 .tox/
 .nox/
 .coverage
@@ -85,9 +84,6 @@ ipython_config.py
 
 # pyenv
 .python-version
-
-# HTML
-*.html
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
