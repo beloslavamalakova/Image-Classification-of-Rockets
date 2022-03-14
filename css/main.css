@@ -289,6 +289,6 @@ nav{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--blue);
-  color: white;
+  background-color: #8b4646;
+  color: black;
 }
