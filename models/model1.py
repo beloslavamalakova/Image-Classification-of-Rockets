@@ -4,9 +4,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt 
 from sklearn.metrics import accuracy_score
-from dataprocessing.py import test, train
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
+from dataprocessing.py import test, train
 
 
 train.info()
