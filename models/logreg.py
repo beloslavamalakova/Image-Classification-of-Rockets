@@ -39,23 +39,23 @@ plt.axis('off')
 plt.subplot(1, 2, 2)
 plt.imshow(np_img2.reshape(image_size, image_size))
 plt.axis('off')
-plt.title("Messy and Clean Rooms in GrayScale")
+plt.title("Grad and Cluster munitions")
 
 def train_data():
-    train_data_messy = [] 
-    train_data_clean=[]
+    train_data_grad = [] 
+    train_data_cluster=[]
     for image1 in tqdm(os.listdir(train_grad)): 
         path = os.path.join(train_grad, image)
         img1 = cv2.imread(path, cv2.IMREAD_GRAYSCALE) 
         img1 = cv2.resize(img1, (image_size, image_size))
-        train_data_messy.append(img1) 
+        train_data_grad.append(img1) 
     for image2 in tqdm(os.listdir(train_cluster)): 
         path = os.path.join(train_cluster, image)
         img2 = cv2.imread(path, cv2.IMREAD_GRAYSCALE) 
         img2 = cv2.resize(img2, (image_size, image_size))
-        train_data_clean.append(img2) 
+        train_data_cluster.append(img2) 
     
-    train_data= np.concatenate((np.asarray(train_data_messy),np.asarray(train_data_clean)),axis=0)
+    train_data= np.concatenate((np.asarray(train_data_grad),np.asarray(train_data_cluster)),axis=0)
     return train_data 
 
 def test_data():
