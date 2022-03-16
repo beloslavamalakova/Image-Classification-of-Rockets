@@ -4,7 +4,6 @@ import numpy as np
 from os.path import join
 import warnings
 warnings.filterwarnings("ignore")
-from torchtext.vocab import GloVe
 import nltk
 nltk.download('punkt')
 import seaborn as sns
@@ -136,6 +135,14 @@ print(model.summary())
 
 epochs = 8 
 batch_size = 32 
+X_train= pad_sequences_train(df_train, df_test)
+print(X_train[0])
+X_test= pad_sequences_test(df_test, df_test)
+print(X_test[0])
+y_train = pd.get_dummies(df_train['Label']).values
+y_train.shape
+y_test = pd.get_dummies(df_test['Label']).values
+print(y_test)
 
 history = model.fit(X_train, 
                     y_train, 
