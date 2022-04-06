@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Munitions and Migration</title>
+    <link rel="icon" type="image/x-icon" href="../img/bomb.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-black.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="myPage">
+    <!-- Sidebar on click -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge"
+      style="display:none;z-index:2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-display-topright w3-text-teal"
+        >Close
+        <i class="fa fa-remove"></i>
+      </a>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      <a href="#" class="w3-bar-item w3-button">Link 4</a>
+      <a href="#" class="w3-bar-item w3-button">Link 5</a>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a
+          class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+          href="javascript:void(0);"
+          onclick="openNav()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button w3-teal"
+          ><i class="fa fa-home w3-margin-right"></i>Logo</a
+        >
+        <a
+          href="#team"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Algorithms</a
+        >
+        <a
+          href="#work"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Work</a
+        >
+        <a
+          href="#pricing"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Forbidden weapons</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Contact</a
+        >
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-button" title="Notifications">
+            Dropdown <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button">Link</a>
+            <a href="#" class="w3-bar-item w3-button">Link</a>
+            <a href="#" class="w3-bar-item w3-button">Link</a>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal"
+          title="Search"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a href="#team" class="w3-bar-item w3-button">Team</a>
+        <a href="#work" class="w3-bar-item w3-button">Work</a>
+        <a href="#pricing" class="w3-bar-item w3-button">Forbidden weapons</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#" class="w3-bar-item w3-button">Search</a>
+      </div>
+    </div>
+
+    <!-- Image Header -->
+    <div class="w3-display-container w3-animate-opacity">
+      <img
+        src="/img/warback.jpg"
+        alt="boat"
+        style="width:100%;min-height:350px;max-height:600px;"
+      />
+    </div>
+
+    <!-- Modal -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-teal w3-display-container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-teal w3-display-topright"
+            ><i class="fa fa-remove"></i
+          ></span>
+          <h4>Oh snap! We just showed you a modal..</h4>
+          <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+        </header>
+        <div class="w3-container">
+          <p>Cool huh? Ok, enough teasing around..</p>
+          <p>
+            Go to our
+            <a class="w3-text-teal" href="/w3css/default.asp"
+              >W3.CSS Tutorial</a
+            >
+            to learn more!
+          </p>
+        </div>
+        <footer class="w3-container w3-teal">
+          <p>Modal footer</p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Team Container -->
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h2>Used algorithms</h2>
+
+      <div class="w3-row">
+        <br />
+
+        <div class="w3-quarter">
+          <img src="/img/typerocket1.png" alt="typerocket1" style="width:45%" />
+          <h3>Logistic regression for image classification</h3>
+          <p>grad bombs vs cluster munitions</p>
+        </div>
+
+        <div class="w3-quarter">
+          <img
+            src="/img/conf_matrix_validation_nlp_log.png"
+            alt="nlp"
+            style="width:45%"
+          />
+          <h3>Logistic regression for text analysis</h3>
+          <p>deriving road updates as neutral, positive, negative</p>
+        </div>
+
+        <div class="w3-quarter">
+          <img
+            src="/img/Demonstration_cluster_bomb.jpg"
+            alt="bomb"
+            style="width:45%"
+          />
+          <h3>LSTM</h3>
+          <p></p>
+        </div>
+
+        <div class="w3-quarter">
+          <img src="/img/IMG_4148.webp" alt="cl bomb" style="width:45%" />
+          <h3>BERT</h3>
+          <p>for future development</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Row -->
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+      <div class="w3-quarter">
+        <h2>Our Work</h2>
+        <p>
+          The usage of banned weapons is classified as a crime against humanity.
+          Hence, the aim of the research is to introduce other ways of
+          classifying munitions in order to introduce a method for proving the
+          usage of such weapons and therefore impose sanctions on the
+          responsible parties. It may also be of use for monitoring the
+          decisions taken on conventions.
+        </p>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white">
+          <img src="/w3images/snow.jpg" alt="Snow" style="width:100%" />
+          <div class="w3-container">
+            <h3>Logistic regression for image classification</h3>
+            <p>
+              The weapon images are classified from one another with logistic
+              regression. The logistic regression algorithm is first iterated
+              through the training dataset (the images in it are labeled, as
+              ‘cluster’, ‘grad’ as the first experiment was deriving the cluster
+              munitions from BM-21 Grad rockets).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white">
+          <img src="/w3images/lights.jpg" alt="Lights" style="width:100%" />
+          <div class="w3-container">
+            <h3>Logistic regression for text classification</h3>
+
+            <p>
+              The misinformation about emigration is also becoming more
+              pressing, as many civilians are seeking shelter abroad. Hence, a
+              model for processing text messages analyzing the road situation
+              and the country's exits is introduced, the aim of it is to keep
+              the migrants informed of the conditions. The model uses several
+              algorithms: logistic regression with an automatic process for
+              labeling data such as negative, neutral, positive (sentiment
+              analysis)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white">
+          <img
+            src="/w3images/mountains.jpg"
+            alt="Mountains"
+            style="width:100%"
+          />
+          <div class="w3-container">
+            <h3>Long short-term memory</h3>
+
+            <p>
+              The LSTM analyses the words as individual ones, part of a string
+              with no connections between them, hence it does not output
+              satisfactory accuracy of the validation dataset.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container -->
+    <div class="w3-container" style="position:relative">
+      <a
+        onclick="w3_open()"
+        class="w3-button w3-xlarge w3-circle w3-teal"
+        style="position:absolute;top:-28px;right:24px"
+        >+</a
+      >
+    </div>
+
+    <!-- Pricing Row -->
+    <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+      <h2>Forbidden weapons</h2>
+      <p>
+        In modern war addition to the many infrastructural and human losses, is
+        that sometimes some of the used weapons by one/both sides include
+        weapons banned by United Nations (UN) conventions. Such weapons are:
+      </p>
+      <br />
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+          <li class="w3-theme">
+            <p class="w3-xlarge">Cluster munitions</p>
+          </li>
+          <li class="w3-padding-16">
+            <b>Usage</b>From 2010 to 2019 at least 4,315 cluster munitions
+          </li>
+          <li class="w3-padding-16"><b>Where?</b> 80 percent are in Syria</li>
+          <li class="w3-padding-16">
+            <b>How about Russia?</b> Weapons investigators say Russian use of
+            cluster munitions across Ukraine
+          </li>
+          <li class="w3-padding-16">
+            <b>Increase</b> There at least 286 people have been killed or
+            wounded in 2019 from cluster-bomb attacks or from remnants of the
+            munitions, compared to 149 in 2018, according to the NY Times.
+          </li>
+          <li class="w3-theme-l5 w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large">
+              <i class="fa fa-check"></i> View more
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+          <li class="w3-theme-l2">
+            <p class="w3-xlarge">Poisonous gases</p>
+          </li>
+          <li class="w3-padding-16">
+            <b>Types</b>nerve, choking, nettle, phosgene
+          </li>
+          <li class="w3-padding-16">
+            <b>Nerve gases</b> break down the neurotransmitters that make organs
+            function
+          </li>
+          <li class="w3-padding-16">
+            <b>Choking gases</b> impedes the victim’s ability to breathe,
+            causing a buildup of fluid in the lungs
+          </li>
+          <li class="w3-padding-16">
+            <b>Phosgene</b> Severe respiratory effects, including pulmonary
+            edema, pulmonary emphysema, and death have been reported in humans.
+          </li>
+          <li class="w3-theme-l5 w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large">
+              <i class="fa fa-check"></i> View more
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-hover-shadow">
+          <li class="w3-theme">
+            <p class="w3-xlarge">Mines</p>
+          </li>
+          <li class="w3-padding-16">
+            <b>Banned by:</b> The Anti-Personnel Mine Ban Convention
+          </li>
+          <li class="w3-padding-16">
+            <b>Casualties</b>The vast majority - 79% - are civilians
+          </li>
+          <li class="w3-padding-16">
+            <b>Child casualties</b> over 46% of the overall number
+          </li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <b>Countries:</b>more than three-quarters of the world's countries
+            (162 States) have joined the Convention
+          </li>
+          <li class="w3-theme-l5 w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large">
+              <i class="fa fa-check"></i> View more
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Container -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          <div class="w3-padding-16">
+            <span class="w3-xlarge w3-border-teal w3-bottombar"
+              >Contact Us</span
+            >
+          </div>
+          <p>We'd love to talk/text with you.</p>
+          <p>
+            <i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Sofia,
+            Bulgaria
+          </p>
+          <p>
+            <i class="fa fa-phone w3-text-teal w3-xlarge"></i> +359 88 202 3715
+          </p>
+          <p>
+            <i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>
+            beloslava.malakova@gmail.com
+          </p>
+        </div>
+        <div class="w3-col m7">
+          <form
+            class="w3-container w3-card-4 w3-padding-16 w3-white"
+            action="/action_page.php"
+            target="_blank"
+          >
+            <div class="w3-section">
+              <label>Name</label>
+              <input class="w3-input" type="text" name="Name" required />
+            </div>
+            <div class="w3-section">
+              <label>Email</label>
+              <input class="w3-input" type="text" name="Email" required />
+            </div>
+            <div class="w3-section">
+              <label>Message</label>
+              <input class="w3-input" type="text" name="Message" required />
+            </div>
+            <input class="w3-check" type="checkbox" checked name="Like" />
+            <label>I Like it!</label>
+            <button type="submit" class="w3-button w3-right w3-theme">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="/img/warback.jpg" style="width:100%;" />
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+      <div
+        style="position:relative;bottom:100px;z-index:1;"
+        class="w3-tooltip w3-right"
+      >
+        <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+        <a class="w3-button w3-theme" href="#myPage"
+          ><span class="w3-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      // Script for side navigation
+      function w3_open () {
+        var x = document.getElementById('mySidebar')
+        x.style.width = '300px'
+        x.style.paddingTop = '10%'
+        x.style.display = 'block'
+      }
+
+      // Close side navigation
+      function w3_close () {
+        document.getElementById('mySidebar').style.display = 'none'
+      }
+
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav () {
+        var x = document.getElementById('navDemo')
+        if (x.className.indexOf('w3-show') == -1) {
+          x.className += ' w3-show'
+        } else {
+          x.className = x.className.replace(' w3-show', '')
+        }
+      }
+    </script>
+  </body>
+</html>

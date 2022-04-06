@@ -24,7 +24,6 @@ import gdown
 import string
 import numpy
 import matplotlib.pyplot as plt
-
 import numpy as np 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -119,6 +118,10 @@ gdown.download('https://drive.google.com/uc?id=1q4U2gVY9tWEPdT6W-pdQpKmo152QqWLE
 gdown.download('https://drive.google.com/uc?id=1nIBqAsItwVEGVayYTgvybz7HeK0asom0', 'finance_test.csv', True)
 
 print ("Train & Test Files are loaded")
+df_train = get_finance_train()
+df_train.head()
+df_test = get_finance_test()
+print(df_test)
 
 n_labels = 3
 label_map = {0 : "negative", 
